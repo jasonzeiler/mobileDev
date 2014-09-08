@@ -9,4 +9,12 @@ let view = UIView(frame: viewRect)
 //view.backgroundColor = UIColor.blackColor()
 view.backgroundColor = UIColor(red: 240.0/255.0, green: 230.0/255.0, blue: 242.0/255.0, alpha: 1.0)
 
+let greenView = UIView(frame: CGRectZero)
+greenView.backgroundColor = UIColor.greenColor()
 
+
+let blueView = UIView(frame: CGRectZero)
+
+let orangeView = UIView(frame: CGRectZero)
+
+let yellowView = UIView(frame: CGRectZero)
