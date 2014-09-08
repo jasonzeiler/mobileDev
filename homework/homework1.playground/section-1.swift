@@ -22,10 +22,16 @@ let greenViewLeftConstraint = NSLayoutConstraint(item: greenView, attribute: .Le
 
 
 let blueView = UIView(frame: CGRectZero)
+blueView.backgroundColor = UIColor.blueColor()
+
 
 let orangeView = UIView(frame: CGRectZero)
+orangeView.backgroundColor = UIColor.orangeColor()
+
 
 let yellowView = UIView(frame: CGRectZero)
+yellowView.backgroundColor = UIColor.yellowColor()
+
 
 view.addSubview(blueView)
 view.addSubview(orangeView)
