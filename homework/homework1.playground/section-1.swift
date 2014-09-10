@@ -50,13 +50,13 @@ let yellowViewRightConstraint = NSLayoutConstraint(item: yellowView, attribute: 
 let yellowViewBottomConstraint = NSLayoutConstraint(item: yellowView, attribute: .Bottom, relatedBy: .Equal, toItem: greenView, attribute: .Bottom, multiplier: 1.0, constant: -10.0)
 let yellowViewLeftConstraint = NSLayoutConstraint(item: yellowView, attribute: .Left, relatedBy: .Equal, toItem: greenView, attribute: .Left, multiplier: 1.0, constant: 10.0)
 
-view.addSubview(blueView)
-view.addSubview(orangeView)
-view.addSubview(yellowView)
+greenView.addSubview(blueView)
+greenView.addSubview(orangeView)
+greenView.addSubview(yellowView)
 
-var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint, orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, orangeViewLeftConstraint, yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
+var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint,  orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, orangeViewLeftConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint ,  yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
 
-//var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint]
+//var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint]
 
 view.addConstraints(constraints)
 view.layoutIfNeeded()
