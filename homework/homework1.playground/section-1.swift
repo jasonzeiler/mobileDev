@@ -42,7 +42,7 @@ let blueViewLeftConstraint = NSLayoutConstraint(item: blueView, attribute: .Left
 let orangeViewTopConstraint = NSLayoutConstraint(item: orangeView, attribute: .Top, relatedBy: .Equal, toItem: greenView, attribute: .Top, multiplier: 1.0, constant: 10.0)
 let orangeViewRightConstraint = NSLayoutConstraint(item: orangeView, attribute: .Right, relatedBy: .Equal, toItem: greenView, attribute: .Right, multiplier: 1.0, constant: -10.0)
 let orangeViewBottomConstraint = NSLayoutConstraint(item: orangeView, attribute: .Bottom, relatedBy: .Equal, toItem: greenView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: -3.0)
-let ornageViewLeftConstraint = NSLayoutConstraint(item: orangeView, attribute: .Left, relatedBy: .Equal, toItem: greenView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 3.0)
+let orangeViewLeftConstraint = NSLayoutConstraint(item: orangeView, attribute: .Left, relatedBy: .Equal, toItem: greenView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 3.0)
 
 //yellow constraints
 let yellowViewTopConstraint = NSLayoutConstraint(item: yellowView, attribute: .Top, relatedBy: .Equal, toItem: greenView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 3.0)
@@ -54,7 +54,7 @@ view.addSubview(blueView)
 view.addSubview(orangeView)
 view.addSubview(yellowView)
 
-var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint, orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, ornageViewLeftConstraint, yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
+var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint, orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, orangeViewLeftConstraint, yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
 
 //var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint]
 
