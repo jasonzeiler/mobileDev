@@ -54,7 +54,7 @@ greenView.addSubview(blueView)
 greenView.addSubview(orangeView)
 greenView.addSubview(yellowView)
 
-var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint,  orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, orangeViewLeftConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint ,  yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
+var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint,  orangeViewTopConstraint, orangeViewRightConstraint, orangeViewBottomConstraint, orangeViewLeftConstraint, blueViewTopConstraint, blueViewRightConstraint, blueViewBottomConstraint, blueViewLeftConstraint,  yellowViewTopConstraint, yellowViewRightConstraint, yellowViewBottomConstraint, yellowViewLeftConstraint]
 
 //var constraints = [greenViewBottomConstraint, greenViewTopConstraint, greenViewLeftConstraint, greenViewRightConstraint]
 
