@@ -10,18 +10,39 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) NSArray *lightGrayViewConstraints;
+
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)loadView{
+    self.view = [[UIv alloc] initWithFrame:]
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIView *)lightGreyView
+{
+    if (!_lightGreyView) {
+        _lightGreyView = {[[UIView alloc] initWithFrame:CGRectZero];
+        [_lightGreyView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        _lightGreyView.backgroundColor = [UIColor.lightGrayColor];
+    }
+        return _lightGreyView;
 }
+
+    - (NSArray *)lightGrayViewConstraints{
+        if (!_lightGrayViewConstraints){
+            _lightGrayViewConstraints = @[
+                                          [NSLayoutConstraint constraintWithItem:self.lightGreyView
+                                                                       attribute:NSLayoutAttributeTop
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.view
+                                                                       attribute:NSLayoutAttributeTop
+                                                                      multiplier:1.0f
+                                                                        constant:0.0f],
+                                          
+                                          ]
+        }
+    }
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) UIView *lightGreyView;
+@property (nonatomic, strong) UIButton *submitButton;
 
 @end
 
