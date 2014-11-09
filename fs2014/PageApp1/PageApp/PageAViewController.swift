@@ -10,6 +10,22 @@ import UIKit
 
 class PageAViewController: UIViewController {
 
+    
+    
+    //outlet to display converted temp in Fahrenheit
+    @IBOutlet weak var degFtemp: UILabel!
+    // variable holding value entered into celsius/centigrade text field
+    @IBOutlet weak var degCtemp: UITextField!
+    //variable that formats string input into a number
+    let formatTemp = NSNumberFormatter()
+    
+    @IBAction func convertAction(sender: AnyObject) {
+        if let cTemperature = formatTemp.numberFromString(degCtemp.text) {
+            let cTemp = Double(cTemperature)*1.8+32
+            degFtemp.text = String(format: "%.2f", cTemp)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
