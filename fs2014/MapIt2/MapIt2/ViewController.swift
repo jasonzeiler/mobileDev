@@ -23,13 +23,10 @@ class ViewController: UIViewController {
         
         
         // Do any additional setup after loading the view, typically from a nib.
-        var latitude:CLLocationDegrees = 38.927246
-        var longitude:CLLocationDegrees = -92.315984
-        var latDelta:CLLocationDegrees = 0.03
-        var lonDelta:CLLocationDegrees = 0.03
+
         
-        var span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta:latDelta, longitudeDelta:lonDelta)
-        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        var span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta:mapData.latDelta, longitudeDelta:mapData.lonDelta)
+        var location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(mapData.latitude, mapData.longitude)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         MapView.setRegion(region, animated:true)
