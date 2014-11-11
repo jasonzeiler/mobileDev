@@ -15,6 +15,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+
+        let mapData = appDelegate.getMapData()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         var latitude:CLLocationDegrees = 38.927246
         var longitude:CLLocationDegrees = -92.315984
