@@ -13,6 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+/*    var locations:Locations = Locations()
+    
+    func getLocations() ->MapData{
+        return Locations
+    }
+*/
     var mapData: MapData = MapData()
 
     func getMapData() ->MapData {

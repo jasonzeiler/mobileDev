@@ -31,11 +31,20 @@ class ViewController: UIViewController {
         
         MapView.setRegion(region, animated:true)
         
+        
+        
         var mapAnnotation = MKPointAnnotation()
         mapAnnotation.coordinate = location
         mapAnnotation.title = "Capen Park Area"
         mapAnnotation.subtitle = "Rock Climbing!"
         MapView.addAnnotation(mapAnnotation)
+        
+        for [] in locationArray{
+            mapAnnotation.coordinate = locationArray.MapData.
+            mapAnnotation.title = locationArray.title
+            mapAnnotation.subtitle = locationArray.subtitle
+            
+        }
 
         
     }
