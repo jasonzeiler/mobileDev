@@ -39,12 +39,12 @@ class ViewController: UIViewController {
         mapAnnotation.subtitle = "Rock Climbing!"
         MapView.addAnnotation(mapAnnotation)
         
-        for [] in locationArray{
+       /* for [] in locationArray{
             mapAnnotation.coordinate = locationArray.MapData.
             mapAnnotation.title = locationArray.title
             mapAnnotation.subtitle = locationArray.subtitle
             
-        }
+        }*/
 
         
     }
@@ -53,7 +53,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+        
 
 }
-

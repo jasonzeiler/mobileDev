@@ -19,19 +19,32 @@ class MapData: NSObject {
     
 }
 
-var locationArray[MapData, String, String]
+//var locationArray[MapData, String, String]
 
+
+
+class PointsOfInterest {
+    
+    
+    var poiLat:Double
+    var poiLon:Double
+    var title:String
+    var subtitle:String
+    init (title: String, subtitle: String, poiLat:Double , poiLon:Double ){
+        self.title = title
+        self.subtitle = subtitle
+        self.poiLat = poiLat
+        self.poiLon = poiLon
+        
+    }
+}
 
 /*
-class Locations: NSArray {
-    
-    
-    var coord:MapData
-    var title:String? = nil
-    var subtitle:String? = nil
-}
-38.944861, -92.329286
-*/
+class pointToBeAnnotated: <#super class#> {
+    <#properties and methods#>
+}*/
+//38.944861, -92.329286
+
 
 
 //Lafarre Hall
