@@ -35,7 +35,6 @@ class PointsOfInterest {
         self.subtitle = subtitle
         self.poiLat = poiLat
         self.poiLon = poiLon
-        
     }
 }
 

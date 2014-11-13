@@ -31,6 +31,11 @@ class ViewController: UIViewController {
         
         MapView.setRegion(region, animated:true)
         
+        var lafarre = PointsOfInterest(title: "Lafarre Hall", subtitle: "Home of C1212", poiLat: 38.946117, poiLon: -92.330186)
+        var starbucks = PointsOfInterest(title: "Starbucks on South 9th", subtitle: "Keeps a coder going!", poiLat: 38.948077, poiLon: -92.327512)
+        var studentCenter = PointsOfInterest(title: "Mizzou Student Center", subtitle: "Catch some Zzz's in the basement", poiLat: 38.942393, poiLon: -92.326393)
+        
+        
         
         
         var mapAnnotation = MKPointAnnotation()
@@ -38,6 +43,9 @@ class ViewController: UIViewController {
         mapAnnotation.title = "Capen Park Area"
         mapAnnotation.subtitle = "Rock Climbing!"
         MapView.addAnnotation(mapAnnotation)
+        
+        
+        
         
        /* for [] in locationArray{
             mapAnnotation.coordinate = locationArray.MapData.
@@ -56,3 +64,15 @@ class ViewController: UIViewController {
         
 
 }
+
+//Lafarre Hall
+//Home of C1212
+//38.946117, -92.330186
+
+//Starbucks on South 9th
+//Keeps a coder going!
+//38.948077, -92.327512
+
+//Mizzou Student Center
+//Catch some Zzz's in the basement
+//38.942393, -92.326393
