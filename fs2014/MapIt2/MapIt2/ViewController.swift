@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
         let mapData = appDelegate.getMapData()
         
-        
+        //let locationData = appDelegate.getLocationData()
         // Do any additional setup after loading the view, typically from a nib.
 
         
@@ -30,31 +30,7 @@ class ViewController: UIViewController {
         var region:MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         MapView.setRegion(region, animated:true)
-        
-        var lafarre = PointsOfInterest(title: "Lafarre Hall", subtitle: "Home of C1212", poiLat: 38.946117, poiLon: -92.330186)
-        var starbucks = PointsOfInterest(title: "Starbucks on South 9th", subtitle: "Keeps a coder going!", poiLat: 38.948077, poiLon: -92.327512)
-        var studentCenter = PointsOfInterest(title: "Mizzou Student Center", subtitle: "Catch some Zzz's in the basement", poiLat: 38.942393, poiLon: -92.326393)
-        
-        
-        
-        
-        var mapAnnotation = MKPointAnnotation()
-        mapAnnotation.coordinate = location
-        mapAnnotation.title = "Capen Park Area"
-        mapAnnotation.subtitle = "Rock Climbing!"
-        MapView.addAnnotation(mapAnnotation)
-        
-        
-        
-        
-       /* for [] in locationArray{
-            mapAnnotation.coordinate = locationArray.MapData.
-            mapAnnotation.title = locationArray.title
-            mapAnnotation.subtitle = locationArray.subtitle
-            
-        }*/
-
-        
+        MapView.addAnnotations(mapData.places)
     }
 
     override func didReceiveMemoryWarning() {
