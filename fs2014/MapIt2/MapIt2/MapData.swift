@@ -18,9 +18,9 @@ class MapData: NSObject {
     var lonDelta:CLLocationDegrees = 0.01
     
     let places:[place]
-    
+    //38.946048, -92.330131
     override init() {
-        let lafarre = place(title: "Lafarre Hall", subtitle: "Home of C1212", locationLat: 38.948077, locationLon: -92.330186)
+        let lafarre = place(title: "Lafarre Hall", subtitle: "Home of C1212", locationLat: 38.946048, locationLon: -92.330131)
         let starbucks = place(title: "Starbucks on South 9th", subtitle: "Keeps a coder going", locationLat: 38.948077, locationLon: -92.327512)
         let studentCenter = place(title: "Mizzou Student Center", subtitle: "Catch some Zzz's in the basement", locationLat: 38.942393, locationLon: -92.326393)
         places = [lafarre, starbucks, studentCenter]
